@@ -30,7 +30,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build Sphinx documentation
-        uses: actions/ammaraskar/sphinx-action@0.4
+        uses: ammaraskar/sphinx-action@0.4
         with:
           build-command: sphinx-build docs/source docs/build
       - name: Build with Jekyll
