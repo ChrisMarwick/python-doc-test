@@ -1,7 +1,7 @@
 """This is my module"""
 
 def main():
-    """Test"""
+    """This is the trunk version of my changes"""
     print('Howdy')
 
 if __name__ == '__main__':
