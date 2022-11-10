@@ -1,8 +1,8 @@
-"""This is my module"""
+"""This is my module (old version)"""
 
 def main():
-    """This is the trunk version of my changes"""
-    print('Howdy')
+    """This is the old version of my changes"""
+    print('Howdy2')
 
 if __name__ == '__main__':
     main()
