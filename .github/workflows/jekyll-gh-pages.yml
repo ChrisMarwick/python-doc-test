@@ -36,7 +36,7 @@ jobs:
       - name: Build Sphinx Documentation
         run: sphinx-multiversion docs/source docs/build
       - name: Check Built Documentation
-        run: ls docs/build
+        run: git branch
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
