@@ -19,11 +19,13 @@ extensions = [
 ]
 
 templates_path = ['_templates']
+
 html_sidebars = {
     '**': [
         'versioning.html',
-    ]
+    ],
 }
+
 exclude_patterns = []
 
 
