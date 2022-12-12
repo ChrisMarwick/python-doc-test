@@ -36,6 +36,8 @@ exclude_patterns = []
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
+smv_branch_whitelist = r'^release/'
+
 # Whitelist pattern for remotes (set to None to use local branches only)
 smv_remote_whitelist = r'^.*$'
 
