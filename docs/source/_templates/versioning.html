@@ -2,7 +2,7 @@
 <h3>{{ _('Versions') }}</h3>
 {% set latest = versions | map(attribute='name') | max %}
 <ul>
-    {%- for item in versions %}
+    {%- for item in versions | sort(attribute='name') | reverse %}
     {% if item.name == latest %}
         <li><a href="{{ item.url }}">Current Version ({{ item.name }})</a></li>
     {% else %}
