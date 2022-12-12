@@ -1,6 +1,6 @@
 {% if versions %}
 <h3>{{ _('Versions') }}</h3>
-{% set latest = max([version.name for version in versions]) %}
+{% set latest = versions | max %}
 <ul>
     {%- for item in versions %}
     {% if item.name == latest %}
