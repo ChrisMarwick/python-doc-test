@@ -1,8 +1,13 @@
 {% if versions %}
 <h3>{{ _('Versions') }}</h3>
+{% set latest = max([version.name for version in versions]) %}
 <ul>
     {%- for item in versions %}
-    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% if item.name == latest %}
+        <li><a href="{{ item.url }}">Current Version ({{ item.name }})</a></li>
+    {% else %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endif %}
     {%- endfor %}
 </ul>
 {% endif %}

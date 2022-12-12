@@ -38,8 +38,5 @@ html_static_path = ['_static']
 
 smv_branch_whitelist = r'^release/'
 
-# Whitelist pattern for remotes (set to None to use local branches only)
-smv_remote_whitelist = r'^.*$'
-
 # Determines whether remote or local git branches/tags are preferred if their output dirs conflict
 smv_prefer_remote_refs = True
